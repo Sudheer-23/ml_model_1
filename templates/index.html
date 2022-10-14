@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model</title>
+    <style>
+        body{
+            padding-top: 170px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Ice Cream Revenue Prediction</h1>
+
+    <form action="{{url_for('predict_output')}}" method="post">
+        <input type="number" step="0.01"  name="temp" placeholder="Enter Temperature: "> </input>
+        <button type="submit">Predict</button>
+    </form>
+
+    
+    
+</body>
+</html>
